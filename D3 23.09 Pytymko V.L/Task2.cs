@@ -55,5 +55,8 @@ namespace D3_23._09_Pytymko_V.L
             public void SetIp(string newIp) {  _ip = newIp; }
         
         }
+
+       
     }
+    
 }
