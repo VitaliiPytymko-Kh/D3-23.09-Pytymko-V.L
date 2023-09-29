@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 using static D3_23._09_Pytymko_V.L.Task2;
 using static D3_23._09_Pytymko_V.L.Task1;
 using static D3_23._09_Pytymko_V.L.Task3;
+using static D3_23._09_Pytymko_V.L.Task4;
 
 namespace D3_23._09_Pytymko_V.L
 {
     class Program
     {
         public static void Main()
-        {
+        {/*
             ///Task1
             BankAccount account = new BankAccount("P", 1000.0m);
 
@@ -55,7 +56,21 @@ namespace D3_23._09_Pytymko_V.L
             MyJournal.PrintJournal();
 
             MyJournal.SetTitle("Time!!");
-            MyJournal.PrintJournal();
+            MyJournal.PrintJournal();*/
+
+
+            //Task4
+
+            Store myStore = new Store(" БТА", "Адреса магазину - Ненацьк ", "БАвовнятко ", "Телефон: Mi", " Bavovna@nenack.com");
+
+            myStore.ShowStore();
+
+            Console.WriteLine();
+
+            myStore.SetNameS($"Нова назва ");
+
+            myStore.ShowStore();
+
 
 
 
