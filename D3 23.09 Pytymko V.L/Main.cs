@@ -12,6 +12,7 @@ namespace D3_23._09_Pytymko_V.L
     {
         public static void Main()
         {
+            ///Task1
             BankAccount account = new BankAccount("P", 1000.0m);
 
             // Виведення початкового балансу
@@ -29,6 +30,8 @@ namespace D3_23._09_Pytymko_V.L
             ATM.WithdrawMoney(account, 10000.0m);
             account.PrintBalance();
 
+
+            ///Task2
             Website web1 = new Website("", "", "", "");
             web1.CreaedtWebsite();
             web1.PrintWebsite();
