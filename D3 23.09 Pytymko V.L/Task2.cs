@@ -10,14 +10,14 @@ namespace D3_23._09_Pytymko_V.L
 {
     internal class Task2
     {
-        public class Webside
+        public class Website
         {
         private string _name;
             private string _description;
             private string _url;
             private string _ip;
 
-            public Webside (string name, string description, string url, string ip)
+            public Website (string name, string description, string url, string ip)
             {
                 _name = name;
                 _description = description;
