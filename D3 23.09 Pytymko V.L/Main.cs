@@ -13,7 +13,7 @@ namespace D3_23._09_Pytymko_V.L
     class Program
     {
         public static void Main()
-        {/*
+        {
             ///Task1
             BankAccount account = new BankAccount("P", 1000.0m);
 
@@ -56,7 +56,7 @@ namespace D3_23._09_Pytymko_V.L
             MyJournal.PrintJournal();
 
             MyJournal.SetTitle("Time!!");
-            MyJournal.PrintJournal();*/
+            MyJournal.PrintJournal();
 
 
             //Task4
