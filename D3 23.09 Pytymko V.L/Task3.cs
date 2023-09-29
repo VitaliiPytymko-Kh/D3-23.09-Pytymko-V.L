@@ -28,19 +28,38 @@ namespace D3_23._09_Pytymko_V.L
                
             }
 
-            public void CreaedJournal()
+            public void CreatedJournal()
             {
-                Console.WriteLine(" Введіть назву :");
+                Console.WriteLine("Введіть назву журналу:");
                 _title = Console.ReadLine();
-                Console.WriteLine(" Введіть рік заснування:");
-                _yearFounded = Console.Read();
-                Console.WriteLine("Введіть опис :");
-                _discription = Console.ReadLine();
-                Console.WriteLine("Введіть contactPhone: ");
-                _contactPhone = Console.ReadLine();
-                Console.WriteLine("Введіть email сайту: ");
-                _email = Console.ReadLine();
 
+                bool isValidYear = false;
+                do
+                {
+                    Console.WriteLine("Введіть рік заснування:");
+                    try
+                    {
+                        _yearFounded = int.Parse(Console.ReadLine());
+                        isValidYear = true;
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine("Помилка: Введіть правильний формат року (ціле число).");
+                    }
+                    catch (OverflowException)
+                    {
+                        Console.WriteLine("Помилка: Введіть рік в межах допустимого діапазону.");
+                    }
+                } while (!isValidYear);
+
+                Console.WriteLine("Введіть опис журналу:");
+                _discription = Console.ReadLine();
+
+                Console.WriteLine("Введіть контактний телефон:");
+                _contactPhone = Console.ReadLine();
+
+                Console.WriteLine("Введіть email:");
+                _email = Console.ReadLine();
             }
 
             public void PrintJournal()

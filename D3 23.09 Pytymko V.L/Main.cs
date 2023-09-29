@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static D3_23._09_Pytymko_V.L.Task2;
 using static D3_23._09_Pytymko_V.L.Task1;
+using static D3_23._09_Pytymko_V.L.Task3;
 
 namespace D3_23._09_Pytymko_V.L
 {
@@ -31,7 +32,7 @@ namespace D3_23._09_Pytymko_V.L
             account.PrintBalance();
 
 
-            ///Task2
+            //Task2
             Website web1 = new Website("", "", "", "");
             web1.CreaedtWebsite();
             web1.PrintWebsite();
@@ -42,6 +43,21 @@ namespace D3_23._09_Pytymko_V.L
             web1.SetIp("New IP 1111 111 1 1 1 1");
 
             web1.PrintWebsite();
+
+            //Task3
+
+            Journal MyJournal = new Journal("dtryh",2000,"rtyrty","1111","sdtyrty");
+             
+            MyJournal.PrintJournal();
+
+            MyJournal.CreatedJournal();
+
+            MyJournal.PrintJournal();
+
+            MyJournal.SetTitle("Time!!");
+            MyJournal.PrintJournal();
+
+
 
 
             Console.WriteLine();
